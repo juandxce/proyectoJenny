@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: red;
+  transition: 5s;
+  display: inline-block;
+}
+
+h1:hover {
+  transform: scale(2.1);
+}
+
+#contenedor {
+  background: violet;
+}
+
+.muchas-clases {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px 300px 100px 0;
+}
+
+.parrafo {
+  color: green;
+}
+
+.centrar-parrafo {
+  text-align: center;
+}
+
+.espacio-a-la-izq {
+  padding-left: 500px;
+}
+
+/* tipos de medida más usados en css
+    1.- px
+    2.- em/rem
+    3.- %
+    4.- vw/vh (viewport width/height)
+
+*/
+.imagen-de-menu {
+  width: 50vw;
+  box-shadow: 22px 13px 27px rgba(0, 0, 0, 0.2);
+}
+
+.productos {
+  width: 50vw;
+  padding-left: 80px;
+}
+
+.productos h2 {
+  color: green;
+}
+
+.menu {
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: orange;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .imagen-de-menu {
+    width: 100vw;
+    box-shadow: 0;
+  }
+
+  .productos {
+    width: 100vw;
+    padding-left: 80px;
+  }
+}
